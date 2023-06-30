@@ -108,9 +108,7 @@ INSERT INTO kendaraan (id_kendaraan, merk, warna, status_kdr, harga_sewa)
 ```
 SELECT * FROM customer;
 ```
-
-![image](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/ba1872af-70d1-4dd1-a397-f9d37242b41c)
-
+![2](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/27632572-f360-4177-af21-6ead89953dee)
 ```
 SELECT * FROM sopir;
 ```
@@ -130,15 +128,20 @@ SELECT * FROM transaksi;
 ```
  UPDATE customer SET email = 'sahrul@gmail.com' WHERE id_customer = 'CS001';
 ```
+![6](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/ddc6f435-9053-4309-97ec-93292acd8eb0)
+
 ```
 UPDATE sopir SET status_sp = 'TERSEDIA' WHERE id_sopir = 'SP004';
 ```
+![7](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/b789f4d6-4432-49ec-9005-9903b46c3a4f)
 ```
 UPDATE kendaraan SET warna = 'BIRU' WHERE id_kendaraan = 'KDR005';
 ```
+![8](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/6da833a2-76c4-40ae-b95c-bc375dd5a370)
 ```
 UPDATE transaksi SET metode_pembayaran = 'CASH' WHERE id_transaksi = '02';
 ```
+![9](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/1024a7c1-8d06-4fc5-8b3b-e1a72546f86a)
 
 ### DELETE
 ```
