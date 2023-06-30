@@ -164,3 +164,35 @@ DELETE FROM transaksi WHERE id_transaksi='01';
 
 
 # SQL JOIN
+```
+SELECT Transaksi.id_transaksi, Kendaraan.merk, Sopir.nama_sp, Customer.nama_cs
+    -> FROM Transaksi
+    -> INNER JOIN Kendaraan ON Transaksi.id_kendaraan = Kendaraan.id_kendaraan
+    -> INNER JOIN Sopir ON Transaksi.id_sopir = Sopir.id_sopir
+    -> INNER JOIN Customer ON Transaksi.id_customer = Customer.id_customer;
+```
+![14](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/05403129-60b4-4c32-b394-07e70ea3b582)
+
+```
+ SELECT Transaksi.id_transaksi, Kendaraan.merk, Transaksi.total_harga, Customer.nama_cs, Transaksi.status_transaksi
+    -> FROM Transaksi
+    -> LEFT JOIN Kendaraan ON Transaksi.id_kendaraan = Kendaraan.id_kendaraan
+    -> LEFT JOIN Customer ON Transaksi.id_customer = Customer.id_customer;
+```
+![15 (2)](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/bbf4b03e-138d-4a5d-8900-70c4a2dcbef1)
+```
+SELECT Transaksi.id_transaksi, Transaksi.total_harga, Sopir.nama_sp, Customer.nama_cs
+    -> FROM Transaksi
+    -> RIGHT JOIN Sopir ON Transaksi.id_sopir = Sopir.id_sopir
+    -> RIGHT JOIN Customer ON Transaksi.id_customer = Customer.id_customer;
+```
+![15](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/8b547397-08bd-48a5-816b-6c5f0244eeb6)
+```
+SELECT * FROM Transaksi
+    -> LEFT OUTER JOIN Customer ON Transaksi.id_customer = Customer.id_customer
+    -> UNION
+    -> SELECT * FROM Transaksi
+    -> LEFT OUTER JOIN Customer ON Transaksi.id_customer = Customer.id_customer;
+```
+![17](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/98b87e9f-88f3-4f3a-8abe-01a37b041103)
+
