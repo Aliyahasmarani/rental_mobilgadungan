@@ -147,14 +147,20 @@ UPDATE transaksi SET metode_pembayaran = 'CASH' WHERE id_transaksi = '02';
 ```
 DELETE FROM customer WHERE id_customer='CS006';
 ```
+![10](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/1561ecb3-2e4d-47fc-be85-2796b9cc42a0)
+
 ```
 DELETE FROM sopir WHERE id_sopir='SP005';
 ```
+![11](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/d07ec695-aa2c-4ebc-88ef-c3f0cf1b8c52)
 ```
 DELETE FROM kendaraan WHERE id_kendaraan='KDR002';
 ```
+![12](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/4b1995c7-ebf9-4254-8af4-2eced6e236e4)
 ```
 DELETE FROM transaksi WHERE id_transaksi='01';
 ```
+![13](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/96e5ed74-45e6-4fe6-b821-3977590fe33a)
+
 
 # SQL JOIN
