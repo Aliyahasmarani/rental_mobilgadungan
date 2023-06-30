@@ -61,6 +61,10 @@ desc transaksi;
 
 ### 5. MENAMBAHKAN INDEX KEY
 ```
+ALTER TABLE transaksi ADD CONSTRAINT FOREIGN KEY (id_customer) REFERENCES customer (id_customer);
+ALTER TABLE transaksi ADD CONSTRAINT FOREIGN KEY (id_sopir) REFERENCES sopir (id_sopir);
+ALTER TABLE transaksi ADD CONSTRAINT FOREIGN KEY (id_kendaraan) REFERENCES kendaraan (id_kendaraan);
+ALTER TABLE sopir ADD CONSTRAINT fk_sopir_id_kend FOREIGN KEY (id_kendaraan) REFERENCES kendaraan (id_kendaraan);
 ```
 
 # SQL CRUD
